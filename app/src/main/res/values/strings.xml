@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Game Book</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Main menu-->
+    <string name="main_menu_new_game">Новая игра</string>
+    <string name="main_menu_load">Загрузка</string>
+    <string name="main_menu_rules">Правила</string>
+    <string name="main_menu_settings">Настройки</string>
+    <string name="main_menu_authors">Об авторах</string>
+    <string name="main_menu_exit">Выход</string>
+
+</resources>

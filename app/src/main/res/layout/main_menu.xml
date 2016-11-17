@@ -1,0 +1,184 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_menu_background"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_size_medium"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_exit"
+                    android:gravity="center"
+                    android:id="@+id/tvExit"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignLeft="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6"
+                    android:layout_alignRight="@+id/imageView6"
+                    android:layout_alignEnd="@+id/imageView6" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView5"
+                    android:layout_above="@+id/tvExit"
+                    android:layout_marginBottom="@dimen/default_size_large"
+                    android:layout_alignLeft="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_authors"
+                    android:gravity="center"
+                    android:id="@+id/tvAuthors"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_alignLeft="@+id/imageView5"
+                    android:layout_alignStart="@+id/imageView5"
+                    android:layout_alignRight="@+id/imageView5"
+                    android:layout_alignEnd="@+id/imageView5" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView4"
+                    android:layout_above="@+id/tvAuthors"
+                    android:layout_marginBottom="@dimen/default_size_large"
+                    android:layout_alignLeft="@+id/imageView5"
+                    android:layout_alignStart="@+id/imageView5" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_settings"
+                    android:gravity="center"
+                    android:id="@+id/tvSettings"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_alignStart="@+id/imageView4"
+                    android:layout_alignRight="@+id/imageView4"
+                    android:layout_alignEnd="@+id/imageView4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView3"
+                    android:layout_above="@+id/tvSettings"
+                    android:layout_marginBottom="@dimen/default_size_large"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_alignStart="@+id/imageView4" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_rules"
+                    android:gravity="center"
+                    android:id="@+id/tvRules"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_alignLeft="@+id/imageView3"
+                    android:layout_alignStart="@+id/imageView3"
+                    android:layout_alignRight="@+id/imageView3"
+                    android:layout_alignEnd="@+id/imageView3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView2"
+                    android:layout_above="@+id/tvRules"
+                    android:layout_marginBottom="@dimen/default_size_large"
+                    android:layout_alignLeft="@+id/imageView3"
+                    android:layout_alignStart="@+id/imageView3" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_load"
+                    android:gravity="center"
+                    android:id="@+id/tvLoad"
+                    android:layout_alignBottom="@+id/imageView2"
+                    android:layout_alignLeft="@+id/imageView2"
+                    android:layout_alignStart="@+id/imageView2"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:layout_alignEnd="@+id/imageView2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_menu_button_with_chain"
+                    android:id="@+id/imageView1"
+                    android:layout_above="@+id/tvLoad"
+                    android:layout_marginBottom="@dimen/default_size_large"
+                    android:layout_alignLeft="@+id/imageView2"
+                    android:layout_alignStart="@+id/imageView2" />
+
+                <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
+                    style="@style/DefaultTextView.Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_with_chain_text"
+                    android:text="@string/main_menu_new_game"
+                    android:gravity="center"
+                    android:id="@+id/tvNewGame"
+                    android:layout_alignBottom="@+id/imageView1"
+                    android:layout_alignLeft="@+id/imageView1"
+                    android:layout_alignStart="@+id/imageView1"
+                    android:layout_alignRight="@+id/imageView1"
+                    android:layout_alignEnd="@+id/imageView1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_size_large"
+                    android:layout_marginRight="@dimen/default_size_medium"
+                    android:layout_marginLeft="@dimen/default_size_medium"
+                    android:src="@drawable/title"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageView" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

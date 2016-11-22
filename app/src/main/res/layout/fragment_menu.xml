@@ -1,9 +1,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="match_parent"
@@ -36,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/default_size_medium"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView6"
+                    android:id="@+id/exit"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true" />
 
@@ -47,21 +45,21 @@
                     android:text="@string/main_menu_exit"
                     android:gravity="center"
                     android:id="@+id/tvExit"
-                    android:layout_alignBottom="@+id/imageView6"
-                    android:layout_alignLeft="@+id/imageView6"
-                    android:layout_alignStart="@+id/imageView6"
-                    android:layout_alignRight="@+id/imageView6"
-                    android:layout_alignEnd="@+id/imageView6" />
+                    android:layout_alignBottom="@+id/exit"
+                    android:layout_alignLeft="@+id/exit"
+                    android:layout_alignStart="@+id/exit"
+                    android:layout_alignRight="@+id/exit"
+                    android:layout_alignEnd="@+id/exit" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView5"
+                    android:id="@+id/authors"
                     android:layout_above="@+id/tvExit"
                     android:layout_marginBottom="@dimen/default_size_large"
-                    android:layout_alignLeft="@+id/imageView6"
-                    android:layout_alignStart="@+id/imageView6" />
+                    android:layout_alignLeft="@+id/exit"
+                    android:layout_alignStart="@+id/exit" />
 
                 <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
                     style="@style/DefaultTextView.Buttons"
@@ -70,21 +68,21 @@
                     android:text="@string/main_menu_authors"
                     android:gravity="center"
                     android:id="@+id/tvAuthors"
-                    android:layout_alignBottom="@+id/imageView5"
-                    android:layout_alignLeft="@+id/imageView5"
-                    android:layout_alignStart="@+id/imageView5"
-                    android:layout_alignRight="@+id/imageView5"
-                    android:layout_alignEnd="@+id/imageView5" />
+                    android:layout_alignBottom="@+id/authors"
+                    android:layout_alignLeft="@+id/authors"
+                    android:layout_alignStart="@+id/authors"
+                    android:layout_alignRight="@+id/authors"
+                    android:layout_alignEnd="@+id/authors" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView4"
+                    android:id="@+id/settings"
                     android:layout_above="@+id/tvAuthors"
                     android:layout_marginBottom="@dimen/default_size_large"
-                    android:layout_alignLeft="@+id/imageView5"
-                    android:layout_alignStart="@+id/imageView5" />
+                    android:layout_alignLeft="@+id/authors"
+                    android:layout_alignStart="@+id/authors" />
 
                 <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
                     style="@style/DefaultTextView.Buttons"
@@ -93,21 +91,21 @@
                     android:text="@string/main_menu_settings"
                     android:gravity="center"
                     android:id="@+id/tvSettings"
-                    android:layout_alignBottom="@+id/imageView4"
-                    android:layout_alignLeft="@+id/imageView4"
-                    android:layout_alignStart="@+id/imageView4"
-                    android:layout_alignRight="@+id/imageView4"
-                    android:layout_alignEnd="@+id/imageView4" />
+                    android:layout_alignBottom="@+id/settings"
+                    android:layout_alignLeft="@+id/settings"
+                    android:layout_alignStart="@+id/settings"
+                    android:layout_alignRight="@+id/settings"
+                    android:layout_alignEnd="@+id/settings" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView3"
+                    android:id="@+id/rules"
                     android:layout_above="@+id/tvSettings"
                     android:layout_marginBottom="@dimen/default_size_large"
-                    android:layout_alignLeft="@+id/imageView4"
-                    android:layout_alignStart="@+id/imageView4" />
+                    android:layout_alignLeft="@+id/settings"
+                    android:layout_alignStart="@+id/settings" />
 
                 <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
                     style="@style/DefaultTextView.Buttons"
@@ -116,21 +114,21 @@
                     android:text="@string/main_menu_rules"
                     android:gravity="center"
                     android:id="@+id/tvRules"
-                    android:layout_alignBottom="@+id/imageView3"
-                    android:layout_alignLeft="@+id/imageView3"
-                    android:layout_alignStart="@+id/imageView3"
-                    android:layout_alignRight="@+id/imageView3"
-                    android:layout_alignEnd="@+id/imageView3" />
+                    android:layout_alignBottom="@+id/rules"
+                    android:layout_alignLeft="@+id/rules"
+                    android:layout_alignStart="@+id/rules"
+                    android:layout_alignRight="@+id/rules"
+                    android:layout_alignEnd="@+id/rules" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView2"
+                    android:id="@+id/load_game"
                     android:layout_above="@+id/tvRules"
                     android:layout_marginBottom="@dimen/default_size_large"
-                    android:layout_alignLeft="@+id/imageView3"
-                    android:layout_alignStart="@+id/imageView3" />
+                    android:layout_alignLeft="@+id/rules"
+                    android:layout_alignStart="@+id/rules" />
 
                 <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
                     style="@style/DefaultTextView.Buttons"
@@ -139,21 +137,21 @@
                     android:text="@string/main_menu_load"
                     android:gravity="center"
                     android:id="@+id/tvLoad"
-                    android:layout_alignBottom="@+id/imageView2"
-                    android:layout_alignLeft="@+id/imageView2"
-                    android:layout_alignStart="@+id/imageView2"
-                    android:layout_alignRight="@+id/imageView2"
-                    android:layout_alignEnd="@+id/imageView2" />
+                    android:layout_alignBottom="@+id/load_game"
+                    android:layout_alignLeft="@+id/load_game"
+                    android:layout_alignStart="@+id/load_game"
+                    android:layout_alignRight="@+id/load_game"
+                    android:layout_alignEnd="@+id/load_game" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_menu_button_with_chain"
-                    android:id="@+id/imageView1"
+                    android:id="@+id/new_game"
                     android:layout_above="@+id/tvLoad"
                     android:layout_marginBottom="@dimen/default_size_large"
-                    android:layout_alignLeft="@+id/imageView2"
-                    android:layout_alignStart="@+id/imageView2" />
+                    android:layout_alignLeft="@+id/load_game"
+                    android:layout_alignStart="@+id/load_game" />
 
                 <com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron
                     style="@style/DefaultTextView.Buttons"
@@ -162,11 +160,11 @@
                     android:text="@string/main_menu_new_game"
                     android:gravity="center"
                     android:id="@+id/tvNewGame"
-                    android:layout_alignBottom="@+id/imageView1"
-                    android:layout_alignLeft="@+id/imageView1"
-                    android:layout_alignStart="@+id/imageView1"
-                    android:layout_alignRight="@+id/imageView1"
-                    android:layout_alignEnd="@+id/imageView1" />
+                    android:layout_alignBottom="@+id/new_game"
+                    android:layout_alignLeft="@+id/new_game"
+                    android:layout_alignStart="@+id/new_game"
+                    android:layout_alignRight="@+id/new_game"
+                    android:layout_alignEnd="@+id/new_game" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -176,7 +174,7 @@
                     android:layout_marginLeft="@dimen/default_size_medium"
                     android:src="@drawable/title"
                     android:scaleType="fitXY"
-                    android:id="@+id/imageView" />
+                    android:id="@+id/title"/>
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

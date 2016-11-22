@@ -1,76 +1,56 @@
 package com.gorevev.gamebook.context.presentation.main_menu;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.gorevev.gamebook.R;
+import com.gorevev.gamebook.context.presentation.common.BaseActivity;
 import com.gorevev.gamebook.context.presentation.common.Layout;
-import com.gorevev.gamebook.context.presentation.common.gui.TextViewAniron;
+import com.gorevev.gamebook.context.presentation.main_menu.menu.MenuFragment;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
-@Layout(id = R.layout.main_menu)
-public class MainMenuActivity extends Activity implements MainMenuRouter {
-    @BindView(R.id.tvNewGame)
-    public TextViewAniron tvNewGame;
-
-    @BindView(R.id.tvLoad)
-    public TextViewAniron tvLoad;
-
-    @BindView(R.id.tvRules)
-    public TextViewAniron tvRules;
-
-    @BindView(R.id.tvSettings)
-    public TextViewAniron tvSettings;
-
-    @BindView(R.id.tvAuthors)
-    public TextViewAniron tvAuthors;
-
-    @BindView(R.id.tvExit)
-    public TextViewAniron tvExit;
+@Layout(id = R.layout.activity_base)
+public class MainMenuActivity extends BaseActivity implements IMainMenuRouter {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /*ButterKnife.inject(this);
+        if (getSupportFragmentManager().getBackStackEntryCount() == 0)
+            addBackStack(new MenuFragment());
+    }
 
-        tvNewGame.setOnClickListener(this);
-        tvLoad.setOnClickListener(this);
-        tvRules.setOnClickListener(this);
-        tvSettings.setOnClickListener(this);
-        tvAuthors.setOnClickListener(this);
-        tvExit.setOnClickListener(this);*/
+    @Override
+    protected void setupActivityComponent() {
+
     }
 
     @Override
     public void newGame() {
-
+        Toast.makeText(this, "New game", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void loadGame() {
-
+        Toast.makeText(this, "Load game", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showRules() {
-
+        Toast.makeText(this, "Rules", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showSettings() {
-
+        Toast.makeText(this, "Settings", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showAuthors() {
-
+        Toast.makeText(this, "Authors", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void exit() {
-
+        finish();
     }
 }

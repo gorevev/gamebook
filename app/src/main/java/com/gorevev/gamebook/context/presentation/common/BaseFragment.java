@@ -43,7 +43,9 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         inject();
+
         getPresenter().setView(this);
     }
 
@@ -62,6 +64,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onDestroyView() {
         unbinder.unbind();
+        getPresenter().setRouter(null);
         super.onDestroyView();
     }
 

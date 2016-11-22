@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exception_repository_put">Не удалось положить данные в хранилище</string>
+</resources>

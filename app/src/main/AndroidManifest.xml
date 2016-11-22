@@ -3,6 +3,7 @@
     package="com.gorevev.gamebook" >
 
     <application
+        android:name=".core.App"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -20,8 +21,7 @@
 
         <activity
             android:name=".context.presentation.main_menu.MainMenuActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:label="@string/app_name">
         </activity>
 
     </application>
